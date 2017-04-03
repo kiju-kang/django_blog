@@ -26,7 +26,7 @@ SECRET_KEY = '#1kdvhmc9=y4##%16#=(hf06!jp^)6ll8mb3c^raverj09exp!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['59.10.126.8', 'localhost', '127.0.0.1', 'kiju.pythonanywhere.com']
 
 
 # Application definition
