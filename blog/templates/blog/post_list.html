@@ -6,17 +6,12 @@
         <div>
             <h1><a href="">Django Kiju's Blog</a></h1>
         </div>
-
+    {%  for post in posts %}
         <div>
-            <p>published: 03.04.2017 22:51</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Hi there!</p>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
         </div>
-
-        <div>
-            <p>published: 03.04.2017 22:51</p>
-            <h2><a href="">My second post</a></h2>
-            <p>It works!</p>
-        </div>
+    {%  endfor %}
     </body>
 </html>
